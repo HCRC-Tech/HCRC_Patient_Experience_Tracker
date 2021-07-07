@@ -87,7 +87,7 @@
 
         <br>
         <li>
-            <button style="height: 2.2cm; margin-top: -20px" class="block button button1" onclick="{{(/addsurvey/create')}}"><span><img
+            <button style="height: 2.2cm; margin-top: -20px" class="block button button1" onclick="{{('addsurvey/create')}}"><span><img
                         src="{{asset('assets/images/survey.png')}}" width="25" height="25"
                         class="d-inline-block align-right"> Create a New Survey
             </span></button>
