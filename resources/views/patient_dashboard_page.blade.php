@@ -51,14 +51,14 @@ header('Content-Type: text/html');?>
         <div style="margin-left: -10px; margin-top: 60px">
             <ul class="lp">
                 <li>
-                    <button class="block button button1" onclick="{{route('surveyselection')}}" type="button"><span><img
+                    <button class="block button button1" onclick="location.href='/surveyselection'" type="button"><span><img
                                 src="{{asset('assets/images/survey.png')}}" width="25" height="25"
                                 class="d-inline-block align-right"> Complete a Survey</span>
                     </button>
                 </li>
                 &nbsp;&nbsp;&nbsp;
                 <li>
-                    <button class="block button button1" onclick="{{route('passwordchangepatient')}}" type="button">
+                    <button class="block button button1" onclick="location.href='/passwordchangepatient'" type="button">
                         <span> <img src="{{asset('assets/images/key.png')}}" width="25" height="25"
                                     class="d-inline-block align-right"> Change Password </span>
                     </button>
