@@ -30,7 +30,7 @@ Route::post('/profilereportName', 'App\Http\Controllers\PatientProfileSummaryCon
 Route::get('/surveyselection', 'App\Http\Controllers\SurveyController@surveyselection');
 Route::post('/form/create', 'App\Http\Controllers\SurveyController@create');
 Route::post('/form', 'App\Http\Controllers\SurveyController@store');
-Route::get('/adminlogin', 'App\Http\Controllers\AdminLoginController@index');
+Route::get('/adminlogin', 'App\Http\Controllers\AdminLoginController@index')->name('adminlogin');
 Route::post('/adminloginpage', 'App\Http\Controllers\AdminLoginController@login');
 Route::get('/patientlogin', 'App\Http\Controllers\PatientLoginController@index');
 Route::post('/patientloginpage', 'App\Http\Controllers\PatientLoginController@login');
