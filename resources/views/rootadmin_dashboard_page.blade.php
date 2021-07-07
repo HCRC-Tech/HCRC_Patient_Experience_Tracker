@@ -44,27 +44,27 @@
 
     <ul class="lp" style="margin-top: 50px; margin-left: 10cm">
         <li>
-            <button style="height: 2.2cm" class="block button button1" onclick="location.href='/accept/create'" type="button"><span><img
+            <button style="height: 2.2cm" class="block button button1" onclick="{{route('/accept/create')}}" type="button"><span><img
                         src="{{asset('assets/images/request.png')}}" width="25" height="25"
                         class="d-inline-block align-right"> New Patient Registration. <br>Click here to review</span>
             </button>
         </li>
         &nbsp;&nbsp;&nbsp;
         <li>
-            <button style="height: 2.2cm" class="block button button1" onclick="location.href='/resetreview/create'" type="button"> <span><img
+            <button style="height: 2.2cm" class="block button button1" onclick="{route('/resetreview/create')}}" type="button"> <span><img
                         src="{{asset('assets/images/request.png')}}" width="25" height="25"
                         class="d-inline-block align-right"> Patient Password Reset Requests. Click here to review
            </span></button>
         </li>
         &nbsp;&nbsp;&nbsp;
         <li>
-            <button style="height: 2.2cm"class="block button button1" onclick="location.href='/profilesearch'"><span> <img
+            <button style="height: 2.2cm"class="block button button1" onclick="{{route('/profilesearch')}}"><span> <img
                         src="{{asset('assets/images/pen.png')}}" width="25" height="25"
                         class="d-inline-block align-right"> View Patient Profile</span></button>
         </li>
         &nbsp;&nbsp;&nbsp;
         <li>
-            <button style="height: 2.2cm"class="block button button1" onclick="location.href='/report/create'"><span><img
+            <button style="height: 2.2cm"class="block button button1" onclick="{{route('/report/create')}}"><span><img
                         src="{{asset('assets/images/pen.png')}}" width="25" height="25"
                         class="d-inline-block align-right"> Generate Report of PERM and PROM Survey Data</span>
             </button>
@@ -72,14 +72,14 @@
         &nbsp;&nbsp;&nbsp;
 
         <li>
-            <button style="height: 2.2cm"class="block button button1" onclick="location.href='/passwordchangeadmin'"><span><img
+            <button style="height: 2.2cm"class="block button button1" onclick="{{route('/passwordchangeadmin')}}"><span><img
                         src="{{asset('assets/images/key.png')}}" width="25" height="25"
                         class="d-inline-block align-right"> Change Your Password</span></button>
         </li>
         &nbsp;&nbsp;&nbsp;
 
         <li>
-            <button style="height: 2.2cm" class="block button button1" onclick="location.href='/adminregistration'"><span><img
+            <button style="height: 2.2cm" class="block button button1" onclick="{{roune('/adminregistration'"><span><img
                         src="{{asset('assets/images/signup.png')}}" width="25" height="25"
                         class="d-inline-block align-right"> Register a New Admin</span>
             </button>
@@ -87,7 +87,7 @@
 
         <br>
         <li>
-            <button style="height: 2.2cm; margin-top: -20px" class="block button button1" onclick="location.href='/addsurvey/create'"><span><img
+            <button style="height: 2.2cm; margin-top: -20px" class="block button button1" onclick="{{(/addsurvey/create')}}"><span><img
                         src="{{asset('assets/images/survey.png')}}" width="25" height="25"
                         class="d-inline-block align-right"> Create a New Survey
             </span></button>
@@ -95,7 +95,7 @@
 
         <br>
         <li>
-            <button style="height: 2.2cm" class="block button button1" onclick="location.href='/editSurveySelect'"><span><img
+            <button style="height: 2.2cm" class="block button button1" onclick="{{route('/editSurveySelect'}}"><span><img
                         src="{{asset('assets/images/survey.png')}}" width="25" height="25"
                         class="d-inline-block align-right"> Modify a Survey
            </span></button>
@@ -103,7 +103,7 @@
 
         <br>
         <li>
-            <button style="height: 2.2cm;" class="block button button1" onclick="location.href='/adminsurveyselection'"><span><img
+            <button style="height: 2.2cm;" class="block button button1" onclick="{route('/adminsurveyselection')"><span><img
                         src="{{asset('assets/images/survey.png')}}" width="25" height="25"
                         class="d-inline-block align-right"> Fill Out a Survey
             </span></button>
@@ -111,18 +111,18 @@
 
         <br>
         <li>
-            <button style="height: 2.2cm" class="block button button1" onclick="location.href='/adminhelp'"><span><img
+            <button style="height: 2.2cm" class="block button button1" onclick="{{route('/adminhelp')}}"><span><img
                         src="{{asset('assets/images/questionmark.png')}}" width="25" height="25"
                         class="d-inline-block align-right"> Admin Help
             </span></button>
         </li>
 
         <br>
-        <li><button  style="height: 2.2cm" class="block button button1" onclick="location.href='/medication'"><span><img src="{{asset('assets/images/medication.png')}}" width="25" height="25" class="d-inline-block align-right"> Add a Medication
+        <li><button  style="height: 2.2cm" class="block button button1" onclick="{{route('/medication')}}"><span><img src="{{asset('assets/images/medication.png')}}" width="25" height="25" class="d-inline-block align-right"> Add a Medication
             </span></button></li>
 
         <br>
-        <li><button  style="height: 2.2cm" class="block button button1" onclick="location.href='/condition'"><span><img src="{{asset('assets/images/clinic.png')}}" width="25" height="25" class="d-inline-block align-right"> Add a Clinic
+        <li><button  style="height: 2.2cm" class="block button button1" onclick="{{route('/condition')}}"><span><img src="{{asset('assets/images/clinic.png')}}" width="25" height="25" class="d-inline-block align-right"> Add a Clinic
             </span></button></li>
 
     </ul>

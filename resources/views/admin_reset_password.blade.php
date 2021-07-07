@@ -33,10 +33,10 @@
     <!-- The dashboard options in the centere of the page-->
 
     <ul class="lp">
-        <li><button class="block" onclick="location.href='new_patient_registeration'" type="button"><i class='fas fa-user-plus'></i> New Patient Registration Click here to review
+        <li><button class="block" onclick="{{route('new_patient_registeration')}}" type="button"><i class='fas fa-user-plus'></i> New Patient Registration Click here to review
             </button></li>
         &nbsp;&nbsp;&nbsp;
-        <li><button  class="block" onclick="location.href='admin_reset_password'" type="button"> <i class='fas fa-user-lock'></i> Patient Password Reset Requests. Click here to review
+        <li><button  class="block" onclick="{{route('admin_reset_password')}}" type="button"> <i class='fas fa-user-lock'></i> Patient Password Reset Requests. Click here to review
             </button> </li>
         &nbsp;&nbsp;&nbsp;
         <li><a href=""></a> <button  class="block"> <i class='fas fa-pen'></i> View Summary of Patient</button></li>
