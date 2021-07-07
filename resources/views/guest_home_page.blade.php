@@ -47,7 +47,7 @@
 
                     <li>
                         <button style="height: 2.2cm" class="block button button1"
-                                onclick="{{route('adminlogin')}}"><span><img
+                                onclick="location.href='{{url('adminlogin')}}'"><span><img
                                     src="{{asset('assets/images/key.png')}}" width="25" height="25"
                                     class="d-inline-block align-right"> Administrator Login</span>
                         </button>
@@ -55,7 +55,7 @@
                     &nbsp;&nbsp;&nbsp;
                     <li>
                         <button style="height: 2.2cm; margin-bottom: 2cm" class="block button button1"
-                                onclick="{{route('patientlogin')}}" type="button"><span><img
+                                onclick="location.href='{{url('patientlogin')}}'" type="button"><span><img
                                     src="{{asset('assets/images/key.png')}}" width="25" height="25"
                                     class="d-inline-block align-right"> Patient Login</span>
                         </button>
@@ -63,7 +63,7 @@
                     &nbsp;&nbsp;&nbsp;
                     <li>
                         <button style="margin-top: -2cm; margin-left: -7.7cm" class="block button button1"
-                                onclick="{{route('patientregistration')}}" type="button"><span><img
+                                onclick="location.href='{{url('patientregistration')}}'" type="button"><span><img
                                     src="{{asset('assets/images/signup.png')}}" width="25" height="25"
                                     class="d-inline-block align-right"> Click here to register as a patient</span>
                         </button>
