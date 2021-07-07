@@ -62,7 +62,7 @@ class ReportController extends Controller
         //finding the patients that match the given filters
 
         //create a query to filter patients from the Patient-Profile table
-        $queryPatients = DB::table('PATIENT_PROFILE);
+        $queryPatients = DB::table('PATIENT_PROFILE');
 
         //get the selected gender option from the survey's response
         $gender = $_POST["gender"];
