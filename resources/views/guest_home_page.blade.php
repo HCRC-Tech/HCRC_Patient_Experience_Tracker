@@ -47,7 +47,7 @@
 
                     <li>
                         <button style="height: 2.2cm" class="block button button1"
-                                onclick="{{route('/adminlogin')}}"><span><img
+                                onclick="{{route('adminlogin')}}"><span><img
                                     src="{{asset('assets/images/key.png')}}" width="25" height="25"
                                     class="d-inline-block align-right"> Administrator Login</span>
                         </button>
