@@ -149,7 +149,6 @@ class ReportController extends Controller
                 $rowArray = json_decode($row, true);
                 $matchedPatientsEmails[] = $rowArray['Email'];
                 $matchedPatientsDOB[] = $rowArray['DOB'];
-
             }
         }
 
@@ -252,10 +251,10 @@ class ReportController extends Controller
         $files = Storage::allFiles();
         $csvFiles = [];
 
-        for( $i = 0; $i < count($files); $i++){
+        for ($i = 0; $i < count($files); $i++) {
             //if the name of the file contains the word 'report'
-            if (str_contains($files[$i], 'report')){
-                $csvFiles[]= $files[$i];
+            if (str_contains($files[$i], 'report')) {
+                $csvFiles[] = $files[$i];
             }
         }
         Storage::delete($csvFiles);
@@ -280,7 +279,7 @@ class ReportController extends Controller
             $list[] = explode("|", $row);
         }
 
-        $path = storage_path('app\\');
+        $path = storage_path('storage/app/');
 
         $date = new DateTime("now", new \DateTimeZone('America/Halifax'));
 
@@ -302,6 +301,5 @@ class ReportController extends Controller
     {
 
         return Storage::download($_POST['fileName']);
-
     }
 }
