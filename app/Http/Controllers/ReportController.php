@@ -279,7 +279,7 @@ class ReportController extends Controller
             $list[] = explode("|", $row);
         }
 
-        $path = storage_path('storage/app/');
+        $path = storage_path('app/');
 
         $date = new DateTime("now", new \DateTimeZone('America/Halifax'));
 
