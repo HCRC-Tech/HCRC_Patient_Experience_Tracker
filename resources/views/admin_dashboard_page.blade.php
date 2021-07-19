@@ -69,7 +69,7 @@
         </li>
         &nbsp;&nbsp;&nbsp;
         <li>
-            <button class="block button button1" onclick="location.href='/report/create'"><span> <img
+            <button class="block button button1" onclick="location.href='{{ url('/report/create')}}'"><span> <img
                         src="{{asset('assets/images/pen.png')}}" width="25" height="25"
                         class="d-inline-block align-right"> Generate Report of PERM and PROM Survey Data</span></button>
         </li>
