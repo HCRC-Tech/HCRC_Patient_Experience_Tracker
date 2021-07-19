@@ -63,13 +63,13 @@
         </li>
         &nbsp;&nbsp;&nbsp;
         <li>
-            <button style="height: 2.2cm" class="block button button1" onclick="location.href='/profilesearch'"><span> <img
+            <button style="height: 2.2cm" class="block button button1" onclick="location.href='/testtesttest'"><span> <img
                         src="{{asset('assets/images/profile.png')}}" width="25" height="25"
                         class="d-inline-block align-right"> View Patient Profile</span></button>
         </li>
         &nbsp;&nbsp;&nbsp;
         <li>
-            <button class="block button button1" onclick="location.href='{{ route('/report/create')}}'"><span> <img
+            <button class="block button button1" onclick="window.location='{{ route('/report/create')}}'"><span> <img
                         src="{{asset('assets/images/pen.png')}}" width="25" height="25"
                         class="d-inline-block align-right"> Generate Report of PERM and PROM Survey Data</span></button>
         </li>
