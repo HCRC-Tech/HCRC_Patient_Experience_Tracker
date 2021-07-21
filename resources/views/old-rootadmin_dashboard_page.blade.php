@@ -37,7 +37,7 @@
         <p class="text-center h2" style="color:seagreen; margin-top: .5cm; margin-left: 4cm">Hello {{$name}}</p>
 
 
-    <p class="text-center h4" style="text-align:center; margin-top:1cm; margin-left: 2.5cm">Here are your root administration options!!! </p>
+    <p class="text-center h4" style="text-align:center; margin-top:1cm; margin-left: 4cm">Here are your administration options </p>
 
 
     <!-- The dashboard options in the center of the page-->
@@ -58,13 +58,13 @@
         </li>
         &nbsp;&nbsp;&nbsp;
         <li>
-            <button style="height: 2.2cm"class="block button button1" onclick="location.href='/profilesearch/testtesttest'"><span> <img
+            <button style="height: 2.2cm"class="block button button1" onclick="location.href='/profilesearch'"><span> <img
                         src="{{asset('assets/images/pen.png')}}" width="25" height="25"
                         class="d-inline-block align-right"> View Patient Profile</span></button>
         </li>
         &nbsp;&nbsp;&nbsp;
         <li>
-            <button style="height: 2.2cm"class="block button button1" onclick="location.href='{{ route('/report/create')}}'"><span><img
+            <button style="height: 2.2cm"class="block button button1" onclick="location.href='/report/create'"><span><img
                         src="{{asset('assets/images/pen.png')}}" width="25" height="25"
                         class="d-inline-block align-right"> Generate Report of PERM and PROM Survey Data</span>
             </button>
