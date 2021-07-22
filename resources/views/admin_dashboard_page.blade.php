@@ -47,7 +47,7 @@
 
     <ul class="lp" style="margin-top: 50px; margin-left: 8cm">
         <li>
-            <button class="block button button1" onclick="location.href='/accept/create'" type="button"><span><img
+            <button class="block button button1" onclick="location.href='{{route('/accept/create')}}'" type="button"><span><img
                         src="{{asset('assets/images/request.png')}}" width="25" height="25"
                         class="d-inline-block align-right"> New Patient Registration.<br> Click here to review</span>
             </button>
@@ -55,7 +55,7 @@
         &nbsp;&nbsp;&nbsp;
 
         <li>
-            <button class="block button button1" onclick="location.href='/resetreview/create'" type="button"><span><img
+            <button class="block button button1" onclick="location.href='{{route('/resetreview/create')}}'" type="button"><span><img
                     src="{{asset('assets/images/request.png')}}" width="25" height="25"
                     class="d-inline-block align-right"> Patient Password Reset Requests. Click here to review</span>
 
@@ -63,7 +63,7 @@
         </li>
         &nbsp;&nbsp;&nbsp;
         <li>
-            <button style="height: 2.2cm" class="block button button1" onclick="location.href='/testtesttest'"><span> <img
+            <button style="height: 2.2cm" class="block button button1" onclick="location.href='{{route('/testtesttest')}}'"><span> <img
                         src="{{asset('assets/images/profile.png')}}" width="25" height="25"
                         class="d-inline-block align-right"> View Patient Profile</span></button>
         </li>
@@ -76,32 +76,32 @@
         &nbsp;&nbsp;&nbsp;
 
         <li>
-            <button style="height: 2.2cm"class="block button button1" onclick="location.href='/passwordchangeadmin'"><span><img
+            <button style="height: 2.2cm"class="block button button1" onclick="location.href='{{route('/passwordchangeadmin')}}'"><span><img
                         src="{{asset('assets/images/key.png')}}" width="25" height="25"
                         class="d-inline-block align-right"> Change Your Password</span></button>
         </li>
         &nbsp;&nbsp;&nbsp;
 
         <li>
-            <button style="height: 2.2cm; margin-top: -20px"class="block button button1" onclick="location.href='/addsurvey/create'"><span><img
+            <button style="height: 2.2cm; margin-top: -20px"class="block button button1" onclick="location.href='{{route('/addsurvey/create')}}'"><span><img
                     src="{{asset('assets/images/survey.png')}}" width="25" height="25"
                     class="d-inline-block align-right"> Create a New Survey</span>
             </button>
         </li>
 
         <br>
-        <li><button style="height: 2.2cm"class="block button button1" onclick="location.href='/editSurveySelect'"><span><img src="{{asset('assets/images/survey.png')}}" width="25" height="25" class="d-inline-block align-right"> Modify a Survey
+        <li><button style="height: 2.2cm"class="block button button1" onclick="location.href='{{route('/editSurveySelect')}}'"><span><img src="{{asset('assets/images/survey.png')}}" width="25" height="25" class="d-inline-block align-right"> Modify a Survey
             </span></button></li>
 
         <br>
-        <li><button style="height: 2.3cm"class="block button button1" onclick="location.href='/adminsurveyselection'"><span><img src="{{asset('assets/images/survey.png')}}" width="25" height="25" class="d-inline-block align-right"> Fill Out a Survey
+        <li><button style="height: 2.3cm"class="block button button1" onclick="location.href={{route('/adminsurveyselection')}}'"><span><img src="{{asset('assets/images/survey.png')}}" width="25" height="25" class="d-inline-block align-right"> Fill Out a Survey
             </span></button></li>
         <br>
-        <li><button style="height: 2.2cm"class="block button button1" onclick="location.href='/adminhelp'"><span><img src="{{asset('assets/images/questionmark.png')}}" width="25" height="25" class="d-inline-block align-right"> Admin Help
+        <li><button style="height: 2.2cm"class="block button button1" onclick="location.href={{route('/adminhelp')}}'"><span><img src="{{asset('assets/images/questionmark.png')}}" width="25" height="25" class="d-inline-block align-right"> Admin Help
             </span></button></li>
 
         <br>
-        <li><button style="height: 2.2cm" class="block button button1" onclick="location.href='/medication'"><span><img src="{{asset('assets/images/medication.png')}}" width="25" height="25" class="d-inline-block align-right"> Add a Medication
+        <li><button style="height: 2.2cm" class="block button button1" onclick="location.href='{{route('/medication')}}'"><span><img src="{{asset('assets/images/medication.png')}}" width="25" height="25" class="d-inline-block align-right"> Add a Medication
             </span></button></li>
 
 
