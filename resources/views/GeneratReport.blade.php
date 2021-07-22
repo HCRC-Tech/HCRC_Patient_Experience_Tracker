@@ -112,7 +112,7 @@
         </nav>
     </div>
 
-    <form name="surveyForm" method="post" action="/report" enctype="multipart/form-data">
+    <form name="surveyForm" method="post" action="{{route('/report')}}" enctype="multipart/form-data">
     @csrf
     <!-- the item to collect the report-->
         <div style=" margin-left:38%; margin-top:3%;">

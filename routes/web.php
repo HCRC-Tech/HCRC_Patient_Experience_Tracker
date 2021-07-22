@@ -38,7 +38,7 @@ Route::get('/editSurvey/create', 'App\Http\Controllers\EditSurveyController@crea
 Route::get('/editSurvey/recreate', 'App\Http\Controllers\EditSurveyController@createStr')->name('/editSurvey/recreate');
 Route::post('/editSurvey', 'App\Http\Controllers\EditSurveyController@store');
 Route::delete('surveyquestions/{id}', 'App\Http\Controllers\EditSurveyController@destroy');
-Route::post('/report', 'App\Http\Controllers\ReportController@store');
+Route::post('/report', 'App\Http\Controllers\ReportController@store')->name('/report');
 Route::get('/report/create', 'App\Http\Controllers\ReportController@create')->name('/report/create');
 Route::post('/accept', 'App\Http\Controllers\AcceptanceController@store');
 Route::get('/accept/create', 'App\Http\Controllers\AcceptanceController@create')->name('/accept/create');
