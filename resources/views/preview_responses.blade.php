@@ -118,7 +118,7 @@
         @endforeach
 
 
-    <form method="post" action="/profilereport" enctype="multipart/form-data">
+    <form method="post" action="{{route('/profilereport')}}" enctype="multipart/form-data">
         @csrf
         <input type="hidden" name="inputEmail" value="{{ $email }}">
 
