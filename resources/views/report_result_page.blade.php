@@ -80,7 +80,7 @@
                 </table>
             </div>
             <div>
-            <form method="post" action="/report/download" enctype="multipart/form-data">
+            <form method="post" action="{{route('/report/download')}}" enctype="multipart/form-data">
                 @csrf
                 <input type="hidden" name="fileName" value="{{$fileName}}">
                 <button style="width: 4cm; margin-left: 80%; margin-top: -70px; "

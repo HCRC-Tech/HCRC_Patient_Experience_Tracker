@@ -62,7 +62,7 @@ Route::post('/addQuestion', 'App\Http\Controllers\EditSurveyController@addQuesti
 Route::get('/addsurvey/create', 'App\Http\Controllers\AddSurveyController@create')->name('/addsurvey/create');
 Route::post('/addsurvey', 'App\Http\Controllers\AddSurveyController@store');
 Route::get('/editSurveySelect', 'App\Http\Controllers\EditSurveyController@surveyselection')->name('/editSurveySelect');
-Route::post('/report/download', 'App\Http\Controllers\ReportController@download');
+Route::post('/report/download', 'App\Http\Controllers\ReportController@download')->name('/report/download');
 
 Route::get('/adminsurveyselection', 'App\Http\Controllers\AdminSurveyController@surveyselection')-> name('/adminsurveyselection');
 Route::post('/adminform/create', 'App\Http\Controllers\AdminSurveyController@create');
