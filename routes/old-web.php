@@ -42,7 +42,7 @@ Route::post('/report', 'App\Http\Controllers\ReportController@store');
 Route::get('/report/create', 'App\Http\Controllers\ReportController@create')->name('/report/create');
 Route::post('/accept', 'App\Http\Controllers\AcceptanceController@store');
 Route::get('/accept/create', 'App\Http\Controllers\AcceptanceController@create')->name('/accept/create');
-Route::get('/resetreview/create', 'App\Http\Controllers\PasswordController@create')->name('/resetreview/create');
+Route::get('/resetreview/create', 'App\Http\Controllers\PasswordController@create')->name('resetreview/create');
 Route::post('/resetreview/store', 'App\Http\Controllers\PasswordController@store');
 Route::get('/passwordchangepatient', 'App\Http\Controllers\PasswordController@patientchange')->name('passwordchangepatient');
 Route::post('/passwordchangepatientsave', 'App\Http\Controllers\PasswordController@patientsave');
