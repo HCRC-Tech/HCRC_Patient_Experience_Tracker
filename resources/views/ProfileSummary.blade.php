@@ -124,7 +124,7 @@
         </div>
     </form>
     <!-- Text box for a patient first name that admins will look for -->
-    <form method="post" action="/profilereportName" enctype="multipart/form-data"
+    <form method="post" action="{{('/profilereportName')}}" enctype="multipart/form-data"
           style="width: 600px; margin-left:15%; margin-top: 2cm">
         @csrf
         <div class="mb-3 row">
