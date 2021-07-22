@@ -25,7 +25,7 @@ Route::post('/adminregistration', 'App\Http\Controllers\AdminRegistrationControl
 Route::get('/profilesearch', 'App\Http\Controllers\PatientProfileSummaryController@index')->name('/profilesearch');
 
 Route::post('/profilereport', 'App\Http\Controllers\PatientProfileSummaryController@search')->name('/profilereport');
-Route::post('/profilereportName', 'App\Http\Controllers\PatientProfileSummaryController@nameSearch')->name('profilereportName');
+Route::post('/profilereportName', 'App\Http\Controllers\PatientProfileSummaryController@nameSearch')->name('/profilereportName');
 
 Route::get('/surveyselection', 'App\Http\Controllers\SurveyController@surveyselection')->name('/surveyselection');
 Route::post('/form/create', 'App\Http\Controllers\SurveyController@create');
