@@ -29,7 +29,7 @@ Route::post('/profilereportName', 'App\Http\Controllers\PatientProfileSummaryCon
 
 Route::get('/surveyselection', 'App\Http\Controllers\SurveyController@surveyselection')->name('/surveyselection');
 Route::post('/form/create', 'App\Http\Controllers\SurveyController@create');
-Route::post('/form', 'App\Http\Controllers\SurveyController@store');
+Route::post('/form', 'App\Http\Controllers\SurveyController@store')->name('/form');
 Route::get('/adminlogin', 'App\Http\Controllers\AdminLoginController@index')->name('/adminlogin');
 Route::post('/adminloginpage', 'App\Http\Controllers\AdminLoginController@login');
 Route::get('/patientlogin', 'App\Http\Controllers\PatientLoginController@index')->name('/patientlogin');
