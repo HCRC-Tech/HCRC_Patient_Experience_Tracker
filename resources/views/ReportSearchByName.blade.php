@@ -78,7 +78,7 @@
                             <td>{{ $d['Gender'] }}</td>
                             <td>{{ $d['Condition'] }}</td>
                             <td>
-                                <form method="post" action="/profilereport" enctype="multipart/form-data">
+                                <form method="post" action="{{route('/profilereport')}}" enctype="multipart/form-data">
                                     @csrf
                                     <input type="hidden" name="inputEmail" value="{{ $d['email'] }}">
 
