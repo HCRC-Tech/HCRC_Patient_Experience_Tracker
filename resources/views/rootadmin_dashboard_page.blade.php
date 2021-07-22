@@ -58,7 +58,7 @@
         </li>
         &nbsp;&nbsp;&nbsp;
         <li>
-            <button style="height: 2.2cm"class="block button button1" onclick="location.href={{route('/profilesearch/testtesttest')}}'"><span> <img
+            <button style="height: 2.2cm"class="block button button1" onclick="location.href={{route('/profilesearch')}}'"><span> <img
                         src="{{asset('assets/images/pen.png')}}" width="25" height="25"
                         class="d-inline-block align-right"> View Patient Profile</span></button>
         </li>
