@@ -108,7 +108,7 @@
     </div>
 
 
-    <form method="post" action="/profilereport" enctype="multipart/form-data"
+    <form method="post" action="{{route('/profilereport')}}" enctype="multipart/form-data"
           style="width: 600px; margin-left:15%; margin-top:8%">
     @csrf
     <!-- Text box for a patient email that admins will look for -->
