@@ -59,7 +59,7 @@ Route::post('/deletion-confirmation', 'App\Http\Controllers\EditSurveyController
 Route::post('/delete', 'App\Http\Controllers\EditSurveyController@deleteQuestion');
 Route::post('/addQuestion', 'App\Http\Controllers\EditSurveyController@addQuestion');
 
-Route::get('/addsurvey/create', 'App\Http\Controllers\AddSurveyController@create')->name('/addsurvey');
+Route::get('/addsurvey/create', 'App\Http\Controllers\AddSurveyController@create')->name('/addsurvey/create');
 Route::post('/addsurvey', 'App\Http\Controllers\AddSurveyController@store');
 Route::get('/editSurveySelect', 'App\Http\Controllers\EditSurveyController@surveyselection')->name('/editSurveySelect');
 Route::post('/report/download', 'App\Http\Controllers\ReportController@download');
