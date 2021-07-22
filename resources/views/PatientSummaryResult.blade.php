@@ -209,7 +209,7 @@
                         <td>{{ $names[$loop->index] }}</td>
                         <td>{{ $dates[$loop->index] }}</td>
 
-                        <td ><form method="post" action="/preview" enctype="multipart/form-data">
+                        <td ><form method="post" action="{{route('/preview')}}" enctype="multipart/form-data">
                             @csrf
                                 <input type="hidden" name="patient" value="{{$Summary['FirstName']}} {{$Summary['LastName']}}">
                                 <input type="hidden" name="responses" value="{{ json_encode($responses[$loop->index],TRUE)}}">

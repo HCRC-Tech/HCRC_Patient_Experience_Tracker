@@ -69,7 +69,7 @@ Route::post('/adminform/create', 'App\Http\Controllers\AdminSurveyController@cre
 Route::post('/adminform', 'App\Http\Controllers\AdminSurveyController@store');
 Route::get('/adminhelp', 'App\Http\Controllers\AdminHelpController@index')->name('/adminhelp');
 
-Route::post('/preview', 'App\Http\Controllers\ViewResponseController@create');
+Route::post('/preview', 'App\Http\Controllers\ViewResponseController@create')->name('/preview');
 
 Route::get('/medication', 'App\Http\Controllers\MedicationController@create')->name('/medication');
 Route::post('/addmedication', 'App\Http\Controllers\MedicationController@add');
